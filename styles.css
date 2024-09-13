@@ -1,6 +1,6 @@
 
 .container-fluid {
-    background-color: #505160b3;
+    background-color: #232323b3;
     padding: 15px;}
 .container-fluid .navbar-brand{
     color: #ffffffb3;
@@ -12,17 +12,31 @@
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff; /* Cambia el color a rojo */
+    color: #ffffff; 
 }
 .navbar-nav .nav-link:hover {
-    color: #666a66; /* Cambia el color a verde cuando el mouse está sobre el enlace */
+    color: #666a66; 
 }
 
 .carousel-item img {
     height: auto;
-    max-height: 700px; /* Puedes ajustar este valor */
-    object-fit: cover; /* Esto hará que las imágenes se ajusten sin deformarse */
+    max-height: 700px; 
+    object-fit: cover; 
   }
 .carousel-inner img {
-    opacity: 1; /* Ajusta el valor entre 0 y 1 */
+    opacity: 1;
+}
+#feedback {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
 }
