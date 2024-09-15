@@ -4,6 +4,8 @@
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
+    position: fixed;
+    top: 0;
 }
 
 .container-fluid {
