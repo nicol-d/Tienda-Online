@@ -1,6 +1,6 @@
 
 .container-fluid {
-    background-color: #232323b3;
+    background-color: #828282b3;
     padding: 15px;}
 .container-fluid .navbar-brand{
     color: #ffffffb3;
@@ -32,6 +32,13 @@
     margin-top: 10px;
     font-weight: bold;
 }
+.container-fluid .col {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .success {
     color: green;
@@ -39,4 +46,14 @@
 
 .error {
     color: red;
+}
+footer .col-md-4 {
+    text-align: left;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: 50px; /* Ajusta el valor según necesites */
 }
