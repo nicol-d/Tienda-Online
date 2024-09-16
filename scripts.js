@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const promoVideo = document.getElementById('promoVideo');
+    const carousel = new bootstrap.Carousel('#carouselExampleCaptions', {
+        interval: 3000, // Intervalo para las imágenes de 3 segundos
+        pause: false // Asegúrate de que el carrusel no se pause en hover
+    });
+
+    if (promoVideo) {
+        // Al cargar los datos del video, espera 6 segundos y luego cambia al siguiente slide
+        promoVideo.addEventListener('loadeddata', () => {
+            setTimeout(() => {
+                promoVideo.pause(); // Pausa el video después de 6 segundos
+                carousel.next(); // Cambia al siguiente slide
+            }, 6000); // 6 segundos para el video
+        });
+
+        // Si el video termina antes de 6 segundos, espera 3 segundos antes de cambiar al siguiente slide
+        promoVideo.addEventListener('ended', () => {
+            setTimeout(() => {
+                carousel.next(); // Cambia al siguiente slide
+            }, 3000); // 3 segundos para las imágenes
+        });
+    }
+
+    // Configurar el carrusel para avanzar automáticamente
+    setInterval(() => {
+        if (carousel._items.length > 1) {
+            carousel.next(); // Cambia al siguiente slide
+        }
+    }, 3000); // Intervalo de 3 segundos para las imágenes
+});
+
 // Inicialización de EmailJS
 (function() {
     emailjs.init("PTbYFfgzmvnZwqXRN");   // Reemplaza con tu Public Key
