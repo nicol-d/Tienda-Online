@@ -18,13 +18,26 @@
     color: #666a66; 
 }
 
+/****CARRUSEL****/
+.carousel-item {
+    position: relative;
+    height: 700px;
+    background: linear-gradient(to bottom, transparent, rgba(20, 22, 19, 0.8));
+}
+
 .carousel-item img {
-    height: auto;
-    max-height: 700px; 
-    object-fit: cover; 
-  }
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+
 .carousel-inner img {
-    opacity: 1;
+    opacity: 2;
 }
 #feedback {
     padding: 10px;
@@ -39,4 +52,34 @@
 
 .error {
     color: red;
+}
+
+/***CARDS**/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-body {
+    flex-grow: 1;
+  }
+  .btn-container {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+.card-img-top{
+    height: 50%;
+}
+
+.card{
+    text-align: center;
+}
+
+.card a{
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    margin-top: 50px;
 }
