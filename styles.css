@@ -1,21 +1,32 @@
+.navbar {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+}
 
 .container-fluid {
-    background-color: #232323b3;
+    background-color: #828282b3;
     padding: 15px;}
 .container-fluid .navbar-brand{
     color: #ffffffb3;
 
 }
-.container-fluid .navbar-brand:hover{
+
+.container-fluid .navbar-brand:hover {
     color: #666a66;
-    
+
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff; 
+    color: #ffffff;
 }
+
 .navbar-nav .nav-link:hover {
-    color: #666a66; 
+    color: #666a66;
 }
 
 /****CARRUSEL****/
@@ -26,6 +37,7 @@
 }
 
 .carousel-item img {
+<<<<<<< HEAD
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -36,14 +48,29 @@
 }
 
 
+=======
+    height: auto;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+>>>>>>> 98a12a4804a561c1fb668e2ca35d1f96e51906a4
 .carousel-inner img {
     opacity: 2;
 }
+
 #feedback {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
     font-weight: bold;
+}
+.container-fluid .col {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .success {
@@ -53,6 +80,7 @@
 .error {
     color: red;
 }
+<<<<<<< HEAD
 
 /***CARDS**/
 
@@ -83,3 +111,15 @@
     margin: 0 auto;
     margin-top: 50px;
 }
+=======
+footer .col-md-4 {
+    text-align: left;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: 50px; /* Ajusta el valor según necesites */
+}
+>>>>>>> 98a12a4804a561c1fb668e2ca35d1f96e51906a4
